@@ -1,0 +1,121 @@
+body{
+    background-color: #eeeeee;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: hidden;
+}
+@font-face{
+    font-family: vazir;
+    src: url(../fonts/vazir-font-v16.1.0/Vazir-Medium.woff);
+}
+.header{
+    background-image: url('../img/logo.png');
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 5px 6px 0 #888888;
+    height: 115px;
+    width: 100%;
+}
+.container{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0 #888888;
+}
+.container h1{
+    text-align: center;
+    font-family: 'vazir';
+    font-size: 20px;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+.container form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .txt-field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+.txt-field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    text-align: end;
+    margin: 0 -9px;
+}
+.txt-field label{
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    color: #888888;
+    transform: translateY(-50%);
+    font-size: 13px;
+    font-family: 'vazir';
+    pointer-events: none;
+    transition: .5s;
+}
+.txt-field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: .9s;
+}
+.txt-field input:focus ~ label,
+.txt-field input:valid ~ label{
+    top: -5px;
+    color: #2691d9;
+}
+.txt-field input:focus ~ span::before,
+.txt-field input:valid ~ span::before{
+    width: 100%;
+}
+.pass{
+    text-align: center;
+    padding: 20px 0;
+}
+.pass a{
+    text-decoration: none;
+    color: black;
+    font-family: 'vazir';
+    font-size: 13px;
+}
+.pass a:hover{
+    text-decoration: underline;
+    padding: 2px;
+}
+
+.save{
+    text-align: center;
+    border-bottom: 2px solid #adadad;
+    padding: 10px 0;
+    font-family: 'vazir';
+    font-size: 13px;
+}
+input[type="submit"]{
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: 'vazir';
+    border-radius: 5px;
+    width: 50px;
+    height: 30px;
+    margin: 0 50%;
+    transform: translateX(-50%);
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Login</title>
+    </head>
+    <body>
+        <div class="header"></div>
+        <div class="container">
+            <h1>حساب كاربری</h1>
+            <form method="POST">
+                <div class="txt-field">
+                    <input type="text" title="شناسه کاربری" required oninvalid="this.setCustomValidity('لطفا شناسه کاربری خود را وارد کنید')">
+                    <span></span>
+                    <label>شناسه کاربری</label>
+                </div>
+                <div class="txt-field">
+                    <input type="password" title="رمز عبور" required oninvalid="this.setCustomValidity('لطفا رمز عبور خود را وارد کنید')">
+                    <span></span>
+                    <label>رمز عبور</label>
+                </div>
+                <input type="submit" value="ورود">
+                <div class="save">
+                    <label>اطلاعات ورود من را ذخیره کن</label>
+                    <input type="checkbox">
+                </div>
+                <div class="pass">
+                    <a href="#">
+                    بازیابی شناسه کاربری یا رمز عبور
+                    </a> 
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
